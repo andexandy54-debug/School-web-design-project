@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Ozone High School Record Management</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <h1 class="logo">Ozone High School</h1>
+                <nav class="main-nav">
+                    <a href="Home.html" class="active">Home</a>
+                    <a href="About.html">About us</a>
+                    <a href="Admissions.html">Admissions</a>
+                    <a href="Academic.html">Academic</a>
+                    <a href="Staff.html">Staff</a>
+                    <a href="contact.html">Contact Us</a>
+                   <!-- <button class="btn" id="login-btn">Login</button>-->
+                </nav> 
+                </div>
+        </header>
+        <!--<div class="wrapper">
+            <div class="form-box login">
+                <h2>Login</h2><br><br>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                
+                </form>
+            </div>
+        </div> -->
+        <main>
+            <section id="auth-section">
+                <div class="auth-box">
+                    <div class="form-toggle">
+                        <button id="show-login" class="active">Login</button>
+                        <button id="show-signup">Sign Up</button>
+                    </div>
+
+                    <!-- login form -->
+                    <form id="login-form" class="auth-form">
+                        <h2>Login to Record Management</h2>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" placeholder="Enter username" required /><br><br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="Enter password" required /><br><br>
+                        <label>Role:</label>
+                        <select id="role" required>
+                            <option value="Select">Select Role</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Teacher">Teacher</option>
+                            <option value="Parent">Parent</option>
+                            <option value="Student">Student</option>
+                        </select><br><br>
+                        <button type="submit">Login</button>
+                    </form>
+
+                    <!-- signup form -->
+                    <form id="signup-form" class="auth-form hidden">
+                        <h2>Create an Account</h2>
+                        <label for="new-username">Username:</label>
+                        <input type="text" id="new-username" placeholder="Enter username" required /><br><br>
+                        <label for="new-email">Email:</label>
+                        <input type="email" id="new-email" placeholder="Enter email" required /><br><br>
+                        <label for="new-password">Password:</label>
+                        <input type="password" id="new-password" placeholder="Enter password" required /><br><br>
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm password" required /><br><br>
+                        <label>Role:</label>
+                        <select id="new-role" required>
+                            <option value="Select">Select Role</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Teacher">Teacher</option>
+                            <option value="Parent">Parent</option>
+                            <option value="Student">Student</option>
+                        </select><br><br>
+                        <button type="submit">Sign Up</button><br><br>
+
+                        <form action="register.php" method="POST">  
+                            <p>Already have an account? <a href="#login-form">Login</a></p>
+                            
+        <button type="submit">Create Account</button>
+    </form>
+                    </form>
+                </div>
+            </section>
+
+
+         <!--<section id="home" class="hero">
+                <div class="container">
+                    <h2>Record Management for Ozone High School</h2>
+                    <p>
+                        A simple, secure and modern way to store student records and
+                        school data moving from paper to digital.
+                    </p>
+                    <a href="#admissions" class="btn">Created by Andy Andex</a>
+                </div>
+            </section>
+        
+            <section id="about" class="container section">
+                <h3>About</h3>
+                <p>
+                    Record management helps schools keep accurate student data, track
+                    progress, and securely store documents. This template provides a
+                    starting point for a school website and record-management overview.
+                </p>
+            </section>
+
+            <section id="admissions" class="container section grid">
+                <div>
+                    <h3>Admissions</h3>
+                    <p>
+                        Learn about the application process, required documents, and
+                        important dates. Contact the office for help with forms.
+                    </p>
+                </div>
+                <div>
+                    <h3>Student Records</h3>
+                    <p>
+                        Keep attendance, grades, and profiles in one place. Backups and
+                        restricted access ensure privacy and reliability.
+                    </p>
+                </div>
+            </section>
+
+            <section id="staff" class="container section">
+                <h3>Staff Directory (Sample)</h3>
+                <div class="cards">
+                    <div class="card">
+                        <strong>Name of school pricipal</strong>
+                        <div class="muted">Principal</div>
+                    </div>
+                
+                    <div class="card">
+                        <strong>Name of school Record officer</strong>
+                        <div class="muted">Records Officer</div>
+                    </div>
+                    <div class="card">
+                        <strong>Name of school Admissions</strong>
+                        <div class="muted">Admissions</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="container section">
+                <h3>Contact</h3>
+                <p>
+                    For questions about records or admissions, use the contact form or
+                    email the school office.
+                </p>
+                
+                <form class="contact-form" action="#" method="post">
+                    <label>
+                        Name
+                        <input type="text" name="name" required />
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" required />
+                    </label>
+                    <label>
+                        Message
+                        <textarea name="message" rows="4" required></textarea>
+                    </label>
+                    <button class="btn" type="submit">Send Message</button>
+                </form>
+            </section>
+        -->
+        </main>
+           <footer class="site-footer">
+            <div class="container">
+                <small>© Ozone High School || Record Management</small>
+            </div>
+        </footer>
+
+        <script>
+            // toggle between login and signup
+            const loginForm = document.getElementById('login-form');
+            const signupForm = document.getElementById('signup-form');
+            const showLogin = document.getElementById('show-login');
+            const showSignup = document.getElementById('show-signup');
+
+            showLogin.addEventListener('click', () => {
+                loginForm.classList.remove('hidden');
+                signupForm.classList.add('hidden');
+                showLogin.classList.add('active');
+                showSignup.classList.remove('active');
+            });
+
+            showSignup.addEventListener('click', () => {
+                loginForm.classList.add('hidden');
+                signupForm.classList.remove('hidden');
+                showSignup.classList.add('active');
+                showLogin.classList.remove('active');
+            });
+
+            // mock submission handlers
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Login submitted');
+            });
+
+            signupForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const pw = document.getElementById('new-password').value;
+                const cpw = document.getElementById('confirm-password').value;
+                if (pw !== cpw) {
+                    alert('Passwords do not match');
+                    return;
+                }
+                alert('Sign up submitted');
+            });
+        </script>
+        <!--this gonna be deleted-->
+        
+
+    </body>
+</html>
