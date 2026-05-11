@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Ozone High School Record Management</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <h1 class="logo">Ozone High School</h1>
+                <nav class="main-nav">
+                    <a href="Home.html" class="active">Home</a>
+                    <a href="About.html">About us</a>
+                   <!-- <a href="Admissions.html">Admissions</a> -->
+                   <!-- Delete it if needed -->
+                   <div class="dropdown">
+                        <a href="Admissions.html" class="dropbtn">Admissions</a>
+                    </div>
+                    <a href="Academic.html">Academic</a>
+                    <a href="Staff.html">Staff</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="admissions">
+            <h2>Admissions</h2>
+
+            <p>
+                Ozone High School welcomes students who are committed to academic
+                excellence, discipline, and personal growth. The admissions process
+                is designed to ensure that every student is prepared to succeed in
+                a supportive and structured learning environment.
+            </p>
+
+            <div class="admissions-grid">
+                <div class="admissions-card admissions-apply">
+                    <h3>Apply Now</h3>
+                    <p>Start your application by filling out the form below.</p>
+                    <form id="apply-now-form" action="#" method="post">
+                        <label for="apply-name">Full Name</label>
+                        <input id="apply-name" type="text" name="name" placeholder="Your full name" required />
+                        <label for="apply-email">Email</label>
+                        <input id="apply-email" type="email" name="email" placeholder="Your email" required />
+                        <label for="apply-grade">Grade</label>
+                        <select id="apply-grade" name="grade" required>
+                            <option value="">Select grade</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <label for="apply-message">Tell us about your goals</label>
+                        <textarea id="apply-message" name="message" placeholder="Why do you want to join Ozone High School?" rows="4"></textarea>
+                        <button type="submit">Submit Application</button>
+                    </form>
+                </div>
+
+                <div class="admissions-card admissions-requirements">
+                    <h3>Requirements</h3>
+                    <p>Prepare these documents before submitting your admission application.</p>
+                    <ul>
+                        <li>Completed application form</li>
+                        <li>Previous school transcripts or report cards</li>
+                        <li>Copy of birth certificate or national ID</li>
+                        <li>One passport-size photograph</li>
+                        <li>Parent/guardian contact information</li>
+                    </ul>
+                </div>
+
+                <div class="admissions-card admissions-tuition">
+                    <h3>Tuition & Fees</h3>
+                    <p>Understand the costs for the upcoming academic year.</p>
+                    <ul>
+                        <li>Registration fee: </li>
+                        <li>Monthly tuition: </li>
+                        <li>Technology support fee:</li>
+                        <li>Activity fee: </li>
+                    </ul>
+                    <p>
+                        Contact the admissions office for exact payment deadlines and scholarship opportunities.
+                    </p>
+                </div>
+            </div>
+
+                    <div class="section-links" style="text-align: center; margin-top: 24px;">
+                        <a href="Home.html">Back to Home Page</a> | 
+                        <a href="About.html">Back to About Page</a> | 
+                        <a href="Academic.html">Go to Academics Page</a>
+                    </div>
+                </section>
+            </body>
+        </html>

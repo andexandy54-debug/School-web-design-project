@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Page</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F1E8;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 {
+    text-align: center;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.full {
+    grid-column: span 2;
+}
+button {
+    grid-column: span 2;
+    padding: 12px;
+    background-color: #2B2B2B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #444;
+}
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #2B2B2B;
+    color: white;
+}
+</style>
+</head>
+<body><div class="container">
+    <h2>Student Admission</h2><form id="admissionForm">
+    <input type="text" placeholder="Full Name" required>
+    <input type="text" placeholder="Gender" required>
