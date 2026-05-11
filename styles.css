@@ -1,0 +1,456 @@
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+  */
+  /* comong back to this later */
+body{
+  margin: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: arial, sans-serif;
+  background-color:white
+} 
+  header{
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+  }
+  nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+nav a:hover{
+  color:black;
+}
+/* dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    background-color: lightblue;
+    /* Matches the header color */
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+    margin-top: 5px;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.dropdown-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dropdown-content label {
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.dropdown-content input,
+.dropdown-content select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.dropdown-content button {
+    padding: 10px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown-content button:hover {
+    background-color: #003080;
+}
+
+/* Show the menu when you hover over the Admissions link */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*finished the dropdown menu styles */
+
+.registration-form{
+  background: #f4f8ff;
+  padding: 30px 20px;
+}
+.registration-card{
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid #dde5ef;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  text-align: left;
+}
+.registration-card h2{
+  margin-top: 0;
+}
+.registration-card p{
+  color: #555;
+  margin-bottom: 18px;
+}
+.registration-card form{
+  display: grid;
+  gap: 14px;
+}
+.registration-card label{
+  font-weight: 600;
+}
+.registration-card input,
+.registration-card select,
+.registration-card textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+.registration-card button{
+  background: #004aad;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.registration-card button:hover{
+  background: #003080;
+}
+
+.admissions-grid{
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 24px;
+}
+
+.admissions-card{
+  background: white;
+  border: 1px solid #dde5ef;
+  border-radius: 10px;
+  padding: 22px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.admissions-card h3{
+  margin-top: 0;
+}
+
+.admissions-card ul{
+  padding-left: 20px;
+  margin: 0;
+}
+
+.admissions-card li{
+  margin-bottom: 10px;
+}
+
+.admissions-card form{
+  display: grid;
+  gap: 14px;
+}
+
+.admissions-card input,
+.admissions-card select,
+.admissions-card textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.admissions-card button{
+  background: #004aad;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admissions-card button:hover{
+  background: #003080;
+}
+
+.header-container{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main{
+  padding: 20px;
+  text-align: center;
+}
+
+.admissions-dropdown{
+  margin: 20px auto;
+  max-width: 480px;
+  text-align: left;
+}
+
+.admissions-dropdown label{
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.admissions-dropdown select{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.admissions-panel{
+  max-width: 760px;
+  margin: 20px auto;
+  text-align: left;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.admissions-panel h3{
+  margin-top: 0;
+}
+
+.login-section{
+  display:flex;
+  justify-content:center;
+  text-align:center;
+  min-height:80vh;
+}
+
+.login-box{
+  background:white;
+  padding:30px;
+  width:320px;
+  border-radius:10px;
+  box-shadow:0 4px 15px rgb(15, 35, 161);
+}
+/*
+.login-box input,
+.login-box select{
+  width:100%;
+  padding:8px;
+  margin:8px 0;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+
+.login-box button{
+  width:100%;
+  padding:10px;
+  background:#004aad;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+*/
+.login-box button:hover{
+  background:#003080;
+}
+.login-box h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* authentication section styles */
+#auth-section, .auth-section{
+  display:flex;
+  justify-content:center;
+  text-align:center;
+  min-height:80vh;
+}
+.auth-box{
+    width: 350px;
+    margin: auto;
+    padding: 25px;
+    background: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/*.auth-box{
+  background:none;
+  padding:30px;
+  width:320px;
+  border-radius:10px;
+  box-shadow:0 4px 15px black;
+  margin:50px auto;
+}
+  */
+.form-toggle{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:20px;
+}
+.form-toggle button{
+  flex:1;
+  padding:10px;
+  background:#ddd;
+  border:none;
+  cursor:pointer;
+  font-weight:bold;
+}
+.form-toggle button.active{
+  background:blue;
+  color:black;
+}
+/*.auth-form input,
+.auth-form select{
+  width:100%;
+  padding:8px;
+  margin:8px 0;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+  */
+.auth-form button{
+  width:100%;
+  padding: 15px; 
+  background:blue;
+  color:black;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+.hidden{
+  display:none; 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+}
+/*
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: lightblue;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+main{
+  flex: 1;
+}
+header{
+  position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ padding: 20px 100px;
+ background: slategrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+.logo{
+  font-size: 2em;
+  color:darkblue;
+  user-select: none;
+}
+.main-nav a{
+  position: relative;
+  font-size: 1.2em;
+  color: rgb(3, 115, 130);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.navigation a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.navigation a:hover::after{
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.navigation .btnlogin{
+  width: 130px;
+  height: 50px;
+  background:cadetblue;
+  border: 2px solid hwb(180 22% 40%);
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: skyblue;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+.navigation .btnlogin:hover{
+  background: #4c0808;
+  color: #091219;
+}
+h1{
+    font-size: 50px;
+      color: blue;
+}
+a{
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+  margin-right: 15px;
+}
+a:hover{
+  color: black;
+}
+main{
+  width: 100%;
+  height: 500px;
+  background-color: lightblue;
+  text-align: center;
+  padding-top: 50px;
+  margin: 0px;
+}
+  */
+
